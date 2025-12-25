@@ -22,15 +22,17 @@
     box-shadow: 0 0 15px 5px rgb(34, 0, 61);
     border: none;
     font-size: 0;
-    background-image: url(../img/2.png);
+    background-image: url(../img/1.png);
     background-size: cover;
     background-position: center;
 }
 
 .button-present:hover {
     transition: background-color 1.5s ease, box-shadow 1s ease;
-    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 15px 5px rgb(154, 161, 255);
+    background-image: url(../img/2.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .button-present:active {
