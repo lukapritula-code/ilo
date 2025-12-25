@@ -71,6 +71,10 @@
     width:
 }
 
+footer {
+    text-align: center;
+}
+
 .snowblock {
     position: absolute;
     top: 0;
