@@ -61,6 +61,7 @@
     align-items: center;
     background-color: black;
     height: 100vh;
+    animation: anim 0.1s ease infinite;
 }
 
 .cover {
@@ -96,4 +97,22 @@ footer {
     100% {
         background-position: 1800px 2000px, 1600px 1600px, 1400px 1200px;
     }
+}
+
+@keyframes anim {
+  0% {
+    background: red;
+  }
+  25% {
+    background: green;
+  }
+  50% {
+    background: black;
+  }
+  75% {
+    background: violet;
+  }
+  100% {
+    background: red;
+  }
 }
