@@ -4,12 +4,15 @@
     padding: 0;
 }
 
+.main {
+    background-color: rgb(197, 58, 58);
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(197, 58, 58);
 }
 
 .button-present {
@@ -36,12 +39,16 @@
     background-image: url(../img/2.png);
     background-size: cover;
     background-position: center;
+    border: none;
+    text-decoration: none;
 }
 
 .button-present:active {
     transition: background-color 1.5s ease, box-shadow 1s ease;
     background-color: rgb(255, 0, 255);
     box-shadow: 0 0 15px 5px rgb(255, 208, 255);
+    border: none;
+    text-decoration: none;
 }
 
 .wrapper {
