@@ -25,6 +25,7 @@
     background-image: url(../img/1.png);
     background-size: cover;
     background-position: center;
+    background-color: white;
 }
 
 .button-present:hover {
