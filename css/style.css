@@ -109,7 +109,7 @@ footer {
     background: green;
   }
   50% {
-    background: black;
+    background: rgb(0, 26, 255);
   }
   75% {
     background: violet;
