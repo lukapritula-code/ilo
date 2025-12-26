@@ -14,45 +14,62 @@
     align-items: center;
     height: 100vh;
 }
-
-.button-present {
+.gradient {
+    position: relative;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 0px;
+    background-image: url(../img/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(184, 233, 255);
+    border-radius: 50%;
     width: 110px;
     height: 110px;
-    text-decoration: none;
-    display: block;
-    position: relative;
     z-index: 2;
-    border-radius: 50%;
-    color: rgb(187, 150, 255);
-    box-shadow: 0 0 15px 5px rgb(34, 0, 61);
-    border: none;
-    font-size: 0;
+
+}
+
+.gradient:hover {
     background-image: url(../img/1.png);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-color: #ffc9c9;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
 }
 
-.button-present:hover {
-    transition: background-color 1.5s ease, box-shadow 1s ease;
-    box-shadow: 0 0 15px 5px rgb(154, 161, 255);
-    background-image: url(../img/2.png);
-    background-size: cover;
-    background-position: center;
-    border: none;
-    text-decoration: none;
+.gradient::before {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: linear-gradient(
+        270deg,
+        #00c6ff,
+        #0072ff,
+        #ec2f4b,
+        #00c6ff
+    );
+    background-size: 400% 400%;
+    animation: gradient-border 6s linear infinite;
+    z-index: -2;
+}
+.gradient::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: inherit;
+    z-index: -1;
 }
 
-.button-present:active {
-    transition: background-color 1.5s ease, box-shadow 1s ease;
-    background-color: rgb(255, 0, 255);
-    box-shadow: 0 0 15px 5px rgb(255, 208, 255);
-    border: none;
-    text-decoration: none;
+@keyframes gradient-border {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 400% 50%; }
 }
 
 .wrapper {
